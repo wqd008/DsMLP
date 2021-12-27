@@ -7,5 +7,6 @@ The code of DsTNet algorithm is comprised of two parts corresponding to two expe
 ## The user guideline of our code
 ### Experiment.1: BER performance for DsTNet, MMSE, and Richardson method
 In this experiment, we simulate the above three algorithms for a 32x4 MIMO system of QPSK, 16QAM, and 64QAM. The structure of code is listed as:
--data_generator.m (The function uesd for generating 3GPP channels and datasets, which is in the folder "data_generation". The generated datas are stored in the folder "input".)
--DsTNet_main.m (The main function for DsTNet algorithm)
+*data_generator.m (The function uesd for generating 3GPP channels and datasets, which is in the folder "data_generation". The generated datas are stored in the folder "input".)
+
+*DsTNet_main.m (The main function for DsTNet algorithm)
