@@ -1,5 +1,5 @@
 # DsTNet-A-Learning-based-Twinning-Network-for-MIMO-Detection-Implemented-by-Dynamic-Stochastic-Computing
-This part of code aims to support the research of our paper named "DsTNet: A Learning-based Twinning Network for MIMO Detection Implemented by Dynamic Stochastic Computing".
+This part of code aims to support the research of our paper named "DsTNet: A Learning-based Twinning Network for MIMO Detection Implemented by Dynamic Stochastic Computing". The code will be deleted when the paper is accepted.
 ## The introduction of DsTNet
 DsTNet is a designed network with a twinning relationship between network parameters and signals. Such a twinning relationship decides the simple structure of DsTNet compared with other network.
 ## The main structure of our code
