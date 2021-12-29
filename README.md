@@ -53,4 +53,5 @@ In this experiment, we simulate the above three algorithms for a 32x4 MIMO syste
 The simulation results are as illustrated in "robust_finish.pdf".
 
 The algorithm and code about the Richardson method are available in the paper:
+
 [1]  X. Gao, L. Dai, C. Yuen, and Y. Zhang, “Low-complexity MMSE signal detection based on Richardson method for large-scale MIMO systems,” in Proc. IEEE 80th Veh. Technol. Conf. (IEEE VTC'14 Fall), Vancouver, Canada, Sep. 2014.
