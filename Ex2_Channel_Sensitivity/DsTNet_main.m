@@ -61,19 +61,19 @@ for ip = 1:max_iteration
         eta = 8;
 
     elseif ip>5&&ip<=10
-        eta = 7;    
+        eta = 5;    
     elseif ip>10&&ip<=15
-        eta = 6;
+        eta = 5;
     elseif ip>15&&ip<=20
         eta = 5;
 
     elseif ip>20&&ip<=25
         eta = 5;
     elseif ip>25&&ip<=30
-        eta = 5;
+        eta = 3;
  
     elseif ip>30&&ip<=35
-        eta = 5;
+        eta = 3;
     elseif ip>35&&ip<=40
         eta = 3;
  
