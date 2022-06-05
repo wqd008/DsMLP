@@ -17,7 +17,11 @@ x = a{nlayer};%x is the output
 x_prime = ones(l,r);
 
 Label_w = zeros(l,r);
-Label_w = dynamic_sequence_generator(x,x_prime,y,a{end-1}',l,r);%1 means plus, -1 means substract
+Label_w_real = zeros(l,r);
+Label_w_imag = zeros(l,r);
+Label_w_real = dynamic_sequence_generator(real(x),x_prime,real(y),a{end-1}',l,r);
+Label_w_imag = dynamic_sequence_generator(imag(x),x_prime,imag(y),a{end-1}',l,r);%1 means plus, -1 means substract
+Label_w = complex(Label_w_real,Label_w_imag);
 Label_w = (a{end-1}' * Label_w) / mini_batch_size;%%%
 nabla_weight{2} = Label_w;
 for in = 2:nlayer
