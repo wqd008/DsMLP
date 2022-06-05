@@ -18,7 +18,7 @@ clear all;
 % sym is used to choose different generated channel matrix for testing. The
 % generated datasets are obtained by the first main function
 % "data_generator.m"
-sym = 80;
+sym = 50;
 
 %datasets input
 filenm1 = ['./input/InputData_',num2str(sym) ,'.mat'];%generated data sets
@@ -40,7 +40,7 @@ ntrain = length(y_train);
 arch = [32,4];
 nlayer = length(arch);
 mini_batch_size = 64;%% the minimum batchsize
-max_iteration = 40;%% the maximum iteration numbers
+max_iteration = 45;%% the maximum iteration numbers
 n1 = 10;
 lambda = 5;
 rng(100);%% fixed random number for testing
@@ -77,23 +77,23 @@ for ip = 1:max_iteration
     if ip<=5
         eta = 8;
     elseif ip>5&&ip<=10
-        eta = 7;    
+        eta = 5;    
     elseif ip>10&&ip<=15
-        eta = 6;
+        eta = 5;
     elseif ip>15&&ip<=20
         eta = 5;
     elseif ip>20&&ip<=25
         eta = 5;
     elseif ip>25&&ip<=30
-        eta = 5;
+        eta = 3;
     elseif ip>30&&ip<=35
-        eta = 5;
+        eta = 3;
     elseif ip>35&&ip<=40
         eta = 3;
     elseif ip>40&&ip<=50
-        eta = 3;
+        eta = 2;
     elseif ip>50&&ip<=60
-        eta = 3;
+        eta = 2;
     else 
         eta = 1;
     end

@@ -13,12 +13,17 @@ nabla_weight = cell(1,2);
 x = a{nlayer};%x is the output
 [l,r] = size(x);
 x_prime = ones(l,r);
-Label_w = zeros(l,r);
 
 %% the stochastic GD circuits
 %"dynamic_sequnce_generator is the main module of DsTNet, which is
 % illustrated in the Fig.10(c) of our paper.
-Label_w = dynamic_sequence_generator(x,x_prime,y,a{end-1}',l,r);%1 means plus, -1 means substract
+%%Label_w = dynamic_sequence_generator(x,x_prime,y,a{end-1}',l,r);%1 means plus, -1 means substract
+Label_w = zeros(l,r);
+Label_w_real = zeros(l,r);
+Label_w_imag = zeros(l,r);
+Label_w_real = dynamic_sequence_generator(real(x),x_prime,real(y),a{end-1}',l,r);
+Label_w_imag = dynamic_sequence_generator(imag(x),x_prime,imag(y),a{end-1}',l,r);%1 means plus, -1 means substract
+Label_w = complex(Label_w_real,Label_w_imag);
 Label_w = (a{end-1}' * Label_w) / mini_batch_size;%%% since the "label_w" is comprised of {+2,+1,0,-1,-2}, thus the multiplication could be processed with low-complexity.
 nabla_weight{2} = Label_w;
 for in = 2:nlayer
