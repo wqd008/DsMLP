@@ -1,9 +1,9 @@
-# DsTNet-A-Learning-based-Twinning-Network-for-MIMO-Detection-Implemented-by-Dynamic-Stochastic-Computing
-This part of code aims to support the research of our paper named "DsTNet: A Learning-based Twinning Network for MIMO Detection Implemented by Dynamic Stochastic Computing". The code will be deleted when the paper is accepted.
-## The introduction of DsTNet
-DsTNet is a designed network with a twinning relationship between network parameters and signals. Such a twinning relationship decides the simple structure of DsTNet compared with other network.
+# DsMLP-A-Learning-based-Multi-Layer-Perception-for-MIMO-Detection-Implemented-by-Dynamic-Stochastic-Computing
+This part of code aims to support the research of our paper named "DsMLP: A Learning-based Multi-Layer Perception for MIMO Detection Implemented by Dynamic Stochastic Computing". The code will be deleted when the paper is accepted.
+## The introduction of DsMLP
+DsMLP is a designed network with a twinning relationship between network parameters and signals. Such a twinning relationship decides the simple structure of DsMLPcompared with other network.
 ## The main structure of our code
-The code of DsTNet algorithm is comprised of two parts corresponding to two experiments (The first experiment is for BER performance while the second experiment is for channel sensetivity) repectively.
+The code of DsMLP algorithm is comprised of two parts corresponding to two experiments (The first experiment is for BER performance while the second experiment is for channel sensetivity) repectively.
 ## The user guideline of our code
 ### Experiment. 1: BER performance for DsTNet, MMSE, and Richardson method
 In this experiment, we simulate the above three algorithms for a 32x4 MIMO system of QPSK, 16QAM, and 64QAM. The structure of code is listed as:
