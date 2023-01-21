@@ -2,55 +2,25 @@
 This part of code aims to support the research of our paper named "DsMLP: A Learning-based Multi-Layer Perception for MIMO Detection Implemented by Dynamic Stochastic Computing" accepted by the journal IEEE Transactions on Signal Processing.
 ## The introduction of DsMLP
 DsMLP is a simple MLP with a mapping relationship between MLP parameters and MIMO signals. Such a mapping relationship decides the simple structure of DsMLP compared with other network. The main idea of DsMLP is converting the high-complexity complex-value matrix operation in MMSE to the weight matrix training in DsMLP (using Stochastic Computing). Therefore, DsMLP is able to decrease the complexity of MIMO detection significantly. Moreover, we design the correspoding Stochastic Computing Circuit to further verify our design, please refer to our paper. (The code will be checked again and be shared recently.
-## The main structure of our code
-The code of DsMLP algorithm is comprised of two parts corresponding to two experiments (The first experiment is for BER performance while the second experiment is for channel sensetivity) repectively.
+## Run DsMLP
+Open the main function "DsMLP_main.m" and run the DsMLP simulation
 ## The user guideline of our code
-### Experiment. 1: BER performance for DsTNet, MMSE, and Richardson method
-In this experiment, we simulate the above three algorithms for a 32x4 MIMO system of QPSK, 16QAM, and 64QAM. The structure of code is listed as:
+The structure of code is listed as:
 
-- data_generator.m (The function uesd for generating 3GPP channels and datasets, which is in the folder "data_generation". The generated datas are stored in the folder "input".)
+- data_generator.m (The function uesd for generating 3GPP channels and datasets, which is in the folder "data_generation". The generated datas are stored in the folder "datasets".)
 
-- DsTNet_main.m (The main function for DsTNet algorithm)
+- DsMLP_main.m (The main function for DsMLP algorithm)
     - trandn_matrix.m (Initialization Function)
         - trandn.m
-    - feedforward.m (Feedforward Function for DsTNet)
-    - Stochastic_SGD.m (Stochastic SGD for DsTNet by DSC)
-        - dynamic_sequence_generator.m (Converting to DSC domain)
-            - and_door.m
-            - xor_door.m
+    - GradientDescent.m (GD Algorithm)
     - evaluatemnist.m (MSE Loss Calculation Function)
     - ber_test.m (Testing the BER Performance)
     - ber_test_Richard.m (Testing the BER for Richardson Method)
         - Richardson_decoder.m (Richardson Algorithm)
 
 The use steps are introduced as:
-1. Run the function "data_generator.m" to generate and store datasets in the folder "input". Specifically, the seed is a random number from 1 to 100, thus 100 3GPP channels will be generated.
-2. Run the function "DsTNet_main.m" to start the DsTNet.
-
-The simulation results are as illustrated in "mse.pdf" and "compare_32_4.pdf".
-
-### Experiment. 2: Channel sensitivity for DsTNet, MMSE, and Richardson method
-In this experiment, we simulate the above three algorithms for a 32x4 MIMO system of QPSK with imperfect channels. The structure of code is listed as:
-
-- data_generator.m (The function uesd for generating 3GPP channels and datasets, which is in the folder "data_generation". The generated datas are stored in the folder "input".)
-
-- non_optimal_channel_generation.m (The function uesd for generating imperfect 3GPP channels.)
-
-- DsTNet_main.m (The main function for DsTNet algorithm)
-    - trandn_matrix.m (Initialization Function)
-        - trandn.m
-    - feedforward.m (Feedforward Function for DsTNet)
-    - Stochastic_SGD.m (Stochastic SGD for DsTNet by DSC)
-        - dynamic_sequence_generator.m (Converting to DSC domain)
-            - and_door.m
-            - xor_door.m
-    - evaluatemnist.m (MSE Loss Calculation Function)
-    - ber_test.m (Testing the BER Performance)
-    - ber_test_Richard.m (Testing the BER for Richardson Method)
-        - Richardson_decoder.m (Richardson Algorithm)
-
-
-The simulation results are as illustrated in "robust_finish.pdf".
+1. Run the function "data_generator.m" to generate and store datasets in the folder "datasets". Specifically, the seed is a random number from 1 to 100, thus 100 3GPP channels will be generated.
+2. Run the function "DsMLP_main.m" to start the DsMLP.
 
 The algorithm and code about the Richardson method are available in the paper:
 
