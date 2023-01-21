@@ -1,7 +1,7 @@
-# DsMLP-A-Learning-based-Multi-Layer-Perception-for-MIMO-Detection-Implemented-by-Dynamic-Stochastic-Computing
-This part of code aims to support the research of our paper named "DsMLP: A Learning-based Multi-Layer Perception for MIMO Detection Implemented by Dynamic Stochastic Computing". The code will be deleted when the paper is accepted.
+# DsMLP: A Learning-based Multi-Layer-Perception for MIMO Detection Implemented by Dynamic Stochastic Computing
+This part of code aims to support the research of our paper named "DsMLP: A Learning-based Multi-Layer Perception for MIMO Detection Implemented by Dynamic Stochastic Computing" accepted by the journal IEEE Transactions on Signal Processing.
 ## The introduction of DsMLP
-DsMLP is a designed network with a twinning relationship between network parameters and signals. Such a twinning relationship decides the simple structure of DsMLPcompared with other network.
+DsMLP is a simple MLP with a mapping relationship between MLP parameters and MIMO signals. Such a mapping relationship decides the simple structure of DsMLP compared with other network. The main idea of DsMLP is converting the high-complexity complex-value matrix operation in MMSE to the weight matrix training in DsMLP (using Stochastic Computing). Therefore, DsMLP is able to decrease the complexity of MIMO detection significantly. Moreover, we design the correspoding Stochastic Computing Circuit to further verify our design, please refer to our paper.
 ## The main structure of our code
 The code of DsMLP algorithm is comprised of two parts corresponding to two experiments (The first experiment is for BER performance while the second experiment is for channel sensetivity) repectively.
 ## The user guideline of our code
