@@ -2,6 +2,7 @@
 This part of code aims to support the research of our paper named "DsMLP: A Learning-based Multi-Layer Perception for MIMO Detection Implemented by Dynamic Stochastic Computing" accepted by the journal IEEE Transactions on Signal Processing.
 
 The DsMLP can be cited as: 
+
 [1] Q. Wu, J. Kuang, J. Tao, J. Chen and W. J. Gross, "DsMLP: A Learning-Based Multi-Layer Perception for MIMO Detection Implemented by Dynamic Stochastic Computing," in IEEE Transactions on Signal Processing, vol. 70, pp. 6392-6403, 2022, doi: 10.1109/TSP.2023.3239170.
 
 **Notice: This version of DsMLP code is implemented in a traditional MLP without Stochastic Computing due to the project privacy requirement. If you require the stochastic computing version for research, please contact my email: wuqd22@mails.tsinghua.edu.cn.**
