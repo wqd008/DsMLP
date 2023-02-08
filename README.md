@@ -1,6 +1,9 @@
 # DsMLP: A Learning-based Multi-Layer-Perception for MIMO Detection Implemented by Dynamic Stochastic Computing
 This part of code aims to support the research of our paper named "DsMLP: A Learning-based Multi-Layer Perception for MIMO Detection Implemented by Dynamic Stochastic Computing" accepted by the journal IEEE Transactions on Signal Processing.
 
+The DsMLP can be cited as: 
+[1] Q. Wu, J. Kuang, J. Tao, J. Chen and W. J. Gross, "DsMLP: A Learning-Based Multi-Layer Perception for MIMO Detection Implemented by Dynamic Stochastic Computing," in IEEE Transactions on Signal Processing, vol. 70, pp. 6392-6403, 2022, doi: 10.1109/TSP.2023.3239170.
+
 **Notice: This version of DsMLP code is implemented in a traditional MLP without Stochastic Computing due to the project privacy requirement. If you require the stochastic computing version for research, please contact my email: wuqd22@mails.tsinghua.edu.cn.**
 
 ## The introduction of DsMLP
@@ -27,4 +30,4 @@ The use steps are introduced as:
 
 The algorithm and code about the Richardson method are available in the paper:
 
-[1]  X. Gao, L. Dai, C. Yuen, and Y. Zhang, “Low-complexity MMSE signal detection based on Richardson method for large-scale MIMO systems,” in Proc. IEEE 80th Veh. Technol. Conf. (IEEE VTC'14 Fall), Vancouver, Canada, Sep. 2014.
+[2]  X. Gao, L. Dai, C. Yuen, and Y. Zhang, “Low-complexity MMSE signal detection based on Richardson method for large-scale MIMO systems,” in Proc. IEEE 80th Veh. Technol. Conf. (IEEE VTC'14 Fall), Vancouver, Canada, Sep. 2014.
